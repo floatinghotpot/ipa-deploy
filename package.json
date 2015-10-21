@@ -1,0 +1,39 @@
+{
+  "name": "ipa-deploy",
+  "version": "0.2.0",
+  "description": "Run ios-deploy to install an IPA package to iOS device",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/floatinghotpot/ipa-deploy.git"
+  },
+  "keywords": [
+    "ios",
+    "ios-deploy",
+    "ipa-deploy",
+    "rjfun"
+  ],
+  "author": "Raymond Xie <rjfun.mobile@gmail.com> (http://floatinghotpot.github.io/)",
+  "contributors": [
+    {
+      "name": "Raymond Xie",
+      "email": "rjfun.mobile@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/ipa-deploy/issues"
+  },
+  "dependencies": {
+    "glob": "^5.0.10",
+    "minimist": "^1.1.0",
+    "shelljs": "^0.5.0"
+  },
+  "devDependencies": {},
+  "analyze": false,
+  "preferGlobal": "true",
+  "bin": {
+    "ipa-deploy": "index.js"
+  }
+}
