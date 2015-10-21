@@ -36,7 +36,7 @@ cd ./tmp
 unzip <path_to_ipa_file>
 
 # run ios-deploy to install the app into iOS device
-ios-deploy -b ./tmp/*.app
+ios-deploy -b ./Payload/*.app
 
 # clean up the tmp folder
 cd ..
