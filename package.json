@@ -1,6 +1,6 @@
 {
   "name": "ipa-deploy",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Run ios-deploy to install an IPA package to iOS device",
   "main": "index.js",
   "scripts": {},

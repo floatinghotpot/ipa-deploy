@@ -10,7 +10,7 @@ var fs = require('fs'),
 require('shelljs/global');
 
 var ipa_deploy_cli = {
-    deploy_ipa: function( ipa_file ) {
+    deploy_ipa: function( ipa_file, extra_args ) {
         var ipa_path = path.resolve( ipa_file );
         if(! fs.existsSync(ipa_path)) {
             echo('ipa file not found: ' + ipa_path);
@@ -30,7 +30,7 @@ var ipa_deploy_cli = {
             for(var i=0; i<files.length; i++) {
                 var filename = payloadDir + '/' + files[i];
                 if(filename.indexOf('.app') + '.app'.length == filename.length) {
-                    exec('ios-deploy -b ' + filename);
+                    exec('ios-deploy -b ' + filename + ' ' + extra_args.join(' '));
                     appFound = true;
                 }
             }
@@ -47,7 +47,7 @@ var ipa_deploy_cli = {
         var args = minimist( argv.slice(2) );
         
         if(args._.length > 0) {
-            this.deploy_ipa( args._[0] );
+            this.deploy_ipa( args._[0], argv.slice(3) );
             
         } else {
             echo('Arguments missing. \n' + 
