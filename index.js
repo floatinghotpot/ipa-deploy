@@ -22,7 +22,7 @@ var ipa_deploy_cli = {
         mkdir( tmp_path );
         cd( tmp_path );
 
-        exec( 'unzip ' + ipa_path );
+        exec( 'unzip "' + ipa_path + '"' );
         var payloadDir = './Payload';
         if(fs.existsSync(payloadDir)) {
             var files = fs.readdirSync( payloadDir );
@@ -30,7 +30,7 @@ var ipa_deploy_cli = {
             for(var i=0; i<files.length; i++) {
                 var filename = payloadDir + '/' + files[i];
                 if(filename.indexOf('.app') + '.app'.length == filename.length) {
-                    exec('ios-deploy -b ' + filename + ' ' + extra_args.join(' '));
+                    exec('ios-deploy -b "' + filename + '" ' + extra_args.join(' '));
                     appFound = true;
                 }
             }
@@ -40,7 +40,7 @@ var ipa_deploy_cli = {
         }
         
         cd('..');
-        exec('rm -r ' + tmp_path);
+        exec('rm -r "' + tmp_path + '"');
     },
     main: function( argv ) {
         var cli = argv[1];
