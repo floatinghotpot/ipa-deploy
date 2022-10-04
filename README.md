@@ -3,7 +3,7 @@ Command line tool to deploy IPA package to iOS device.
 
 It was written with nodejs before, now it's re-written with python3.
 
-## Installation
+# Installation #
 
 Please make sure your Python is v3.7 or above.
 
