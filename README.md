@@ -48,6 +48,15 @@ cd ..
 rm -r ./tmp
 ```
 
+# Dependency #
+
+It will call [ios-deploy](https://github.com/ios-control/ios-deploy), so make sure it's installed first.
+
+If not installed, install  it with Homebrew:
+```bash
+brew install ios-deploy
+```
+
 # Credits #
 
 A simple tool created by Raymond Xie, to install IPA package with command line.
