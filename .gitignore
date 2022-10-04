@@ -5,7 +5,7 @@
 .pytest_cache
 __pycache__
 *.iml
-hiquant.egg-info
+ipa_deploy.egg-info
 build
 dist
 log
