@@ -1,0 +1,9 @@
+README.md
+setup.py
+ipa_deploy/__init__.py
+ipa_deploy/version.py
+ipa_deploy.egg-info/PKG-INFO
+ipa_deploy.egg-info/SOURCES.txt
+ipa_deploy.egg-info/dependency_links.txt
+ipa_deploy.egg-info/entry_points.txt
+ipa_deploy.egg-info/top_level.txt

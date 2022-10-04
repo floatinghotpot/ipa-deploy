@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: ipa-deploy
+Version: 2.0.0
+Summary: install IPA package to iOS device with command line
+Home-page: https://github.com/floatinghotpot/ipa-deploy
+Download-URL: https://github.com/floatinghotpot/ipa-deploy
+Author: Liming Xie
+Author-email: liming.xie@gmail.com
+License: GPLv3+
+Keywords: ios,installer
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
 
 Command line tool to deploy IPA package to iOS device.
 

@@ -1,0 +1,2 @@
+[console_scripts]
+ipa-deploy = ipa_deploy:cli_main
