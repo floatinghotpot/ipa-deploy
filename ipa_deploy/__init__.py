@@ -67,12 +67,11 @@ def cli_main_params_options(params, options):
 
     # exec the commands
     cmds = [
+        'rm -rf ./tmp',
         'mkdir ./tmp',
-        'cd ./tmp',
-        'unzip "' + ipa_file + '"',
-        'ios-deploy -b ./Payload/*.app',
-        'cd ..',
-        'rm -r ./tmp',
+        'unzip "' + ipa_file + '" -d ./tmp',
+        'ios-deploy -b ./tmp/Payload/*.app',
+        'rm -rf ./tmp',
     ]
     for cmd in cmds:
         status, output = exec_cmd( cmd )

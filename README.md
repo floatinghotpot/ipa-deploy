@@ -37,14 +37,12 @@ Here are the steps that the tool actualy runs:
 ```bash
 # unzip the IPA file to tmp folder
 mkdir ./tmp
-cd ./tmp
-unzip <path_to_ipa_file>
+unzip <path_to_ipa_file> -d ./tmp
 
 # run ios-deploy to install the app into iOS device
-ios-deploy -b ./Payload/*.app
+ios-deploy -b ./tmp/Payload/*.app
 
 # clean up the tmp folder
-cd ..
 rm -r ./tmp
 ```
 
